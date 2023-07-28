@@ -23,7 +23,22 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.habitcard{
+  border: "1px solid gray";
+  background-color: gainsboro;
+  height: 128px;
+  width: 256px;
+  margin: 16px;
 
+}
+.habitcardd{
+  border: "1px solid gray";
+  background-color: gainsboro;
+  height: 128px;
+  width: 256px;
+  margin: 16px;
+  
+}
 .App-link {
   color: #61dafb;
 }
