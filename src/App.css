@@ -39,6 +39,48 @@
   margin: 16px;
   
 }
+
+.cardthree {
+  width: 720px;
+  background: honeydew;
+  box-shadow: indigo;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.buttons button {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 16px;
+}
+
+.content h2 {
+  margin-bottom: 16px;
+}
+
+.content p {
+  color: royalblue;
+  font-size: 16px;
+  margin: 16px;
+}
+
+
 .App-link {
   color: #61dafb;
 }

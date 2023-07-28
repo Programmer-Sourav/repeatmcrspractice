@@ -8,8 +8,9 @@ import reportWebVitals from './reportWebVitals';
 import {BookContext,  BookProvider } from './MCR1/contexts/BookContext';
 import { BrowserRouter } from 'react-router-dom';
 import { HabitContext, HabitProvider } from './MCR2/contexts/HabitContext';
+import { ForumContext, ForumProvider } from './MCR4/contexts/ForumContext';
 
-export { BookContext, HabitContext }
+export { BookContext, HabitContext, ForumContext }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +18,9 @@ root.render(
     <BrowserRouter>
     <BookProvider>
     <HabitProvider> 
+      <ForumProvider>
     <App />
+    </ForumProvider>
     </HabitProvider> 
     </BookProvider>
     </BrowserRouter>
