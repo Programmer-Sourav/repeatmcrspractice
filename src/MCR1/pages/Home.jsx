@@ -5,11 +5,9 @@ import { Link } from "react-router-dom"
 
 export default function Home(){
 
-     const { books, handleCategorySelection } = useContext(BookContext)
+     const { books, handleCategorySelection, categories } = useContext(BookContext)
 
-     const categories = [{id: 1, category: "read"}, 
-                          {id:2, category: "want"},
-                            {id: 3, category: "reading"}]
+ 
 
     //category can also be a simple array, categories = ["read","want", "reading"]
 
@@ -29,7 +27,7 @@ export default function Home(){
             {
                categories.map((cate)=>( 
                 <div>
-                <h1>{cate.category}</h1>
+                <h1>{cate.title}</h1>
               <ul>
               {getFilteredList(cate.category) .map((bookdata)=>(
                 <BookCard bookdata={bookdata}/>

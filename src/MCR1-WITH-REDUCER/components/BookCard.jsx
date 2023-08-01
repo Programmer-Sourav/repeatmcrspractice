@@ -3,7 +3,7 @@ import { BookContext } from "../contexts/BookContext"
 
 export default function BookCard({bookdata}){
 
- const { selectedCategory, handleCategorySelection, categories}  = useContext(BookContext)
+ const { selectedCategory, handleCategorySelection}  = useContext(BookContext)
  
     return(
         <div style={{width:"192px", height:"320px", border: "1px solid black", display:"inline-block"}}>{
@@ -12,11 +12,9 @@ export default function BookCard({bookdata}){
             <p> {bookdata.title}</p>
             <p>{bookdata.author}</p>
             <select value = {bookdata.category} onChange={(e)=>{handleCategorySelection(e, bookdata)}}>
-                {/* <option value="read"> Read </option>
+                <option value="read"> Read </option>
                 <option value="want"> want to Read </option>
-                <option value="reading"> Reading </option> */}
-                {categories.map((categoryData)=>
-                <option value={categoryData.category}> {categoryData.title} </option>)}
+                <option value="reading"> Reading </option>
             </select>
             </div>
             }</div>

@@ -7,9 +7,6 @@ export function BookProvider({children}){
   const [selectedCategory, setSelectedCategory] = useState("")
   const [books, setBooks]  = useState([])
   const [searchState, setSearchState] = useState("")
-  const categories = [{id: 1, category: "read", title: "Read"}, 
-  {id:2, category: "want", title: "Want to Read"},
-    {id: 3, category: "reading", title: "Currently Reading"}]
 
 
   
@@ -39,6 +36,6 @@ export function BookProvider({children}){
   }
 
     return(
-      <BookContext.Provider value={{selectedCategory, handleCategorySelection, books, searchState, handleSearchValue, categories}}> { children }</BookContext.Provider>
+      <BookContext.Provider value={{selectedCategory, handleCategorySelection, books, searchState, handleSearchValue}}> { children }</BookContext.Provider>
     )
 }
